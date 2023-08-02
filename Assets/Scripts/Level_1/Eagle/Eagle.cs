@@ -18,7 +18,8 @@ public class Eagle : Entity
     }
     private void Update()
     {
-        Move();
+        try { Move(); }
+        catch { }
     }
     void Move()
     {

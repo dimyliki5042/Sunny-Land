@@ -8,7 +8,9 @@ public class Camera : MonoBehaviour
 
     private void Update()
     {
-        Move();
+        try { Move(); }
+        catch { }
+        if (Input.GetButton("Cancel")) Application.Quit();
     }
     void Move()
     {

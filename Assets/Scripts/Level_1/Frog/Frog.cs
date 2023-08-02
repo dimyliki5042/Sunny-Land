@@ -23,7 +23,8 @@ public class Frog : Entity
     private void Update()
     {
         if (detected)
-            Move();
+            try { Move(); }
+            catch { }
     }
 
     void Move()
